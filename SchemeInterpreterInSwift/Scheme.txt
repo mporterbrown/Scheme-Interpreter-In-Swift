@@ -1,0 +1,84 @@
+(display "Cond Example: -->")
+(cond ((> 12 2234) ("First"))
+    ((< 123 2123) ("Second")))
+(display "")
+
+(display "Let Example: -->")
+(let ((x 2) (y 3))
+  (* x y)) 
+(display "")
+
+(display "Math Example: -->")
+(+ (* 5 5) (- (+ 6 6) (+ 3 3)) 4 (cos 100))
+(display "")
+
+;(lambda (a b) (+ (* 2 a) b)) 
+
+(display "Lambda Example: -->")
+((lambda (x y) (+ x y)) 4 6)
+(display "")
+
+(display "Simple Define Example: -->")
+(define z 50)
+(+ z z)
+(display "")
+
+(define (add2 c) (+ 2 c))
+;(add2 5)
+
+;(and (> 5 3) (> 5 2))
+
+(display "SList Define Example: -->")
+(define (double x)(+ x x))
+(double 5)
+(display "")
+
+(display "Set! Example: -->")
+(define y 5)
+(set! y (+ 5 5))
+(+ y y)
+(display "")
+
+;(define (halve x) (/ x 2))
+;(halve 10)
+ 
+(display "Cdr Example: -->")
+(cdr (list 1 2 3 4))
+(display "")
+
+(display "If Example: -->")
+(if (> 5 110) ("TRUE") ("FALSE"))
+(display "")
+
+(display "List-ref Example: -->")
+(list-ref (list "a" "b" "c") 0)
+(display "")
+
+(display "Car/Cons Example: -->")
+(car (cons (cons 1 2) 4))
+(display "")
+
+(display "Complex Define Example: -->")
+(define (x) (list-ref (list "a" "b" "c") 0))
+(x)
+(display "")
+
+(display "Define with nested Proc Example: -->")
+(define (x y) (double y))
+(x 5)
+(display "")
+
+(display "Set! w variable example: -->")
+(define temp 5)
+(set! temp (+ temp 2))
+(+ temp temp)
+(display "")
+
+(display "If with symbol example: -->")
+(define ifTest 3)
+(if (> 5 ifTest) ("TRUE") ("FALSE"))
+
+
+
+
+
